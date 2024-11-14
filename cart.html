@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Tienda de Utensilios de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #carrito-items {
+            margin: 20px 0;
+        }
+
+        .carrito-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .carrito-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .carrito-item h3 {
+            margin: 0;
+            font-size: 18px;
+            flex: 1;
+        }
+
+        .carrito-item p {
+            margin: 0 20px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .cantidad {
+            display: flex;
+            align-items: center;
+        }
+
+        .cantidad button {
+            background-color: #f0c14b;
+            color: #111;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cantidad button:hover {
+            background-color: #ddb347;
+        }
+
+        .cantidad span {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        #confirmar-compra {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #confirmar-compra:hover {
+            background-color: #0056b3;
+        }
+
+        #total-a-pagar { /* Nuevo */
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main>
+        <div id="carrito-items">
+            <!-- Los elementos del carrito se cargarán aquí -->
+        </div>
+        <div id="total-a-pagar"></div> <!-- Nuevo -->
+        <button id="confirmar-compra">Confirmar Compra</button>
+    </main>
+
+    <script src="js/cart.js"></script>
+   
+</body>
+</html>

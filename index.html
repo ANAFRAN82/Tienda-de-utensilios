@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Utensilios de Cocina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        #productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            width: calc(33.33% - 40px);
+            margin: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 50%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: block; /* Para que la propiedad margin: auto; funcione */
+            margin: auto; /* Centra horizontalmente */
+            object-fit: cover;
+        }
+
+        .producto h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .producto p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Estilo específico para pantallas pequeñas */
+        @media screen and (max-width: 768px) {
+            .producto {
+                width: calc(50% - 40px);
+            }
+        }
+
+        /* Estilo específico para pantallas aún más pequeñas */
+        @media screen and (max-width: 480px) {
+            .producto {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Utensilios de Cocina</h1>
+    </header>
+
+    <div id="productos">
+        <div class="producto" data-nombre="Plato">
+            <a href="detalle_platos.php">
+                <img src="https://m.media-amazon.com/images/I/61eVYJXWQRL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Plato">
+                <h2>Platos</h2>
+                <p>¡Ideal para servir tus platos más deliciosos!</p>
+            </a>
+        </div>
+
+        <div class="producto" data-nombre="Cubiertos">
+            <a href="detalle_utencilios.php">
+                <img src="https://m.media-amazon.com/images/I/71v-WsGbW6L._AC_SX679_.jpg" alt="Cubiertos">
+                <h2>Cubiertos</h2>
+                <p>¡Completa tu mesa con estos elegantes cubiertos!</p>
+            </a>
+        </div>
+
+        <div class="producto" data-nombre="Vasos">
+            <a href="detalle_vasos.php">
+                <img src="https://m.media-amazon.com/images/I/712Ya1l4VWL._AC_SX679_.jpg" alt="Vasos">
+                <h2>Vasos</h2>
+                <p>¡Disfruta de tus bebidas favoritas con estilo!</p>
+            </a>
+        </div>
+
+        <div class="producto" data-nombre="Sartenes">
+            <a href="detalle_sartenes.php">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRPgRLEkEef_ZJAIvN-wvg-Enn3kII6_F5HrsHl7FDb_JgaA9kcueaUP8fmlj9HVacNSbfpF_7vFRInuLgRosrQl9BsfRaTlx2oHcgMFcwTTj-tBsrN52gz&usqp=CAE" alt="Sartenes">
+                <h2>Sartenes</h2>
+                <p>¡Prepara tus platillos más exquisitos con estas sartenes!</p>
+            </a>
+        </div>
+
+        <div class="producto" data-nombre="Ollas">
+            <a href="detalle_ollas.php">
+                <img src="https://m.media-amazon.com/images/I/71XMfm2yXUL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Ollas">
+                <h2>Ollas</h2>
+                <p>¡Cocina tus recetas favoritas con nuestras ollas de calidad!</p>
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
